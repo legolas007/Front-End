@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <title>豆瓣音乐播放器</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/audio-player.css">
+</head>
+<body>
+<div class="container">
+    <div class="album-cover-wrapper">
+        <div class="album-cover"></div>
+    </div>
+    <div class="control-panel">
+        <div class="song-info">
+            <h1 class="song-title"></h1>
+            <p class="singer"></p>
+        </div>
+        <div class="sub-control-bar">
+            <div class="sub-control-wrapper">
+                <div class="time-volume-wrapper">
+                    <span class="time-info">
+                        <i class="current-time">00:00</i>/<i class="total-time">00:00</i>
+                    </span>
+                    <span class="volume-btn">
+                        <i id="icon-yinliang" class="icon iconfont icon-yinliang"></i>
+                        <div class="volume-bar-wrapper">
+                            <div class="volume-bar"></div>
+                        </div>
+                    </span>
+                </div>
+                <div class="sub-function-wrapper">
+                    <span>
+                        <i class="icon iconfont icon-ci"></i>
+                    </span>
+                    <span>
+                        <i class="icon iconfont icon-xiazai"></i>
+                    </span>
+                    <span>
+                        <i class="icon iconfont icon-jiahao"></i>
+                    </span>
+                    <span>
+                        <i class="icon iconfont icon-fenxiang"></i>
+                    </span>
+                </div>
+            </div>
+            <div id="progress-bar">
+                <div id="past-progress-bar"></div>
+            </div>
+            <div class="audio-wrapper">
+                <audio src="" autoplay="autoplay" preload="metadata"></audio>
+            </div>
+        </div>
+        <div class="main-control-wrapper">
+            <div class="like-discard-wrapper">
+                <i id="icon-aixin" class="icon iconfont icon-aixin">
+                          <span class='like-icon'>
+                            <div class='heart-animation-1'></div>
+                            <div class='heart-animation-2'></div>
+                          </span>
+                </i>
+                <i id="icon-laji2" class="icon iconfont icon-laji2"></i>
+            </div>
+            <div class="play-control-wrapper">
+                <i id="icon-play-and-pause" class="icon iconfont icon-icon-play"></i>
+                <i id="icon-next" class="icon iconfont icon-icon-next"></i>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/main-control.js"></script>
+</body>
+</html>
